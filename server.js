@@ -1,8 +1,7 @@
 var http = require("http");
 var url = require("url");
-var router = require("router");
 
-function start(){
+function start(route){
 	function onRequest(request, response) {
  		console.log("Request received.");
 		var pathname = url.parse(request.url).pathname;
